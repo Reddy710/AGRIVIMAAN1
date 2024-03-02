@@ -1,0 +1,462 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Agrivimaan",
+    "dateExported": "2024-01-18T17:08:12.072Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "747d4775-b7ad-49e4-9134-c08e33673871",
+            "name": "Users",
+            "containerId": "",
+            "created": "2024-01-09T16:43:03.662Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e752209e-8822-4826-9912-315f65ac571f",
+            "name": "Drones",
+            "containerId": "",
+            "created": "2024-01-09T16:43:20.654Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "084d840d-c2c3-4ba7-8e44-b169bb232b62",
+            "name": "Pilots",
+            "containerId": "",
+            "created": "2024-01-10T17:31:11.978Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "f58c22d6-25ef-4223-bc65-77beb6fb1f6a",
+            "name": "Admin",
+            "containerId": "",
+            "created": "2024-01-10T17:31:38.428Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "fec6211f-82c9-44d2-9b9e-878f9d086bec",
+            "name": "search",
+            "containerId": "",
+            "created": "2024-01-12T12:51:49.935Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "9b41c0ab-114c-4793-b5ab-88d97cb45ebb",
+            "name": "RepairingForms",
+            "containerId": "",
+            "created": "2024-01-13T09:50:19.236Z",
+            "sortNum": 80000
+        },
+        {
+            "_id": "10c7edcc-d1b1-4cb4-8fe4-1c33cfe71ac7",
+            "name": "SprayingForms",
+            "containerId": "",
+            "created": "2024-01-14T07:38:05.851Z",
+            "sortNum": 90000
+        },
+        {
+            "_id": "1f11684b-c282-4407-a03c-81a8b58a6784",
+            "name": "Cart",
+            "containerId": "",
+            "created": "2024-01-14T14:02:55.667Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "0e9c9fdc-058f-4f9d-8da0-864ead2b8592",
+            "name": "Orders",
+            "containerId": "",
+            "created": "2024-01-14T14:03:18.994Z",
+            "sortNum": 110000
+        },
+        {
+            "_id": "d648855e-f79a-4efc-bcca-794864cb3e1c",
+            "name": "FeedbackForm",
+            "containerId": "",
+            "created": "2024-01-15T12:45:35.022Z",
+            "sortNum": 120000
+        },
+        {
+            "_id": "4e6894b4-f5f0-49cd-86f5-92ff0eedf301",
+            "name": "Address",
+            "containerId": "",
+            "created": "2024-01-15T14:03:40.230Z",
+            "sortNum": 130000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "43335388-a23c-4f16-8200-19ad2c4325e4",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "747d4775-b7ad-49e4-9134-c08e33673871",
+            "name": "register",
+            "url": "http://localhost:8000/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-09T16:43:42.236Z",
+            "modified": "2024-01-14T13:40:04.981Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\r\n    \"Name\": \"Vijay\",\r\n    \"phone_number\": \"7776665555\",\r\n    \"Password\": \"willpass\",\r\n    \"address\": \"456 Cedar St\"\r\n  }\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e4412b65-39c9-472c-8aee-97d60924c82f",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "747d4775-b7ad-49e4-9134-c08e33673871",
+            "name": "login",
+            "url": "http://localhost:8000/users/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-09T16:45:01.484Z",
+            "modified": "2024-01-12T13:34:42.828Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"phone_number\": \"1298986590\",\n  \"Password\": \"TestPassword123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b5a5605a-ca86-481b-ae79-0f3e76ad4af1",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "e752209e-8822-4826-9912-315f65ac571f",
+            "name": "create_drone",
+            "url": "http://localhost:8000/drones/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-09T16:46:47.231Z",
+            "modified": "2024-01-09T17:00:45.944Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIxMjQzNTc2ODkwIiwiaWF0IjoxNzA0ODE5NjEwLCJleHAiOjE3MDQ4MjMyMTB9.kVJ5oBkqnT5Uu1QG0HqIIHydeSbWJHQ9sIYRktkfaWo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"drone_name\": \"Sample Drone\",\r\n  \"drone_model\": \"Model XYZ\",\r\n  \"Drone_img\": \"drone_image_url.jpg\",\r\n  \"Price\": 999.99,\r\n  \"QuantityInStock\": 5,\r\n  \"last_maintenance_date\": \"2023-12-31\",\r\n  \"Status\": \"Available\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "98d901c8-a36e-4913-ba05-ba964bafc51a",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "747d4775-b7ad-49e4-9134-c08e33673871",
+            "name": "getUsers",
+            "url": "http://localhost:8000/users/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-09T17:38:39.767Z",
+            "modified": "2024-01-09T17:40:13.474Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIxMjQzNTc2ODkwIiwiaWF0IjoxNzA0ODIxOTkwLCJleHAiOjE3MDQ4MjU1OTB9.itMTj3nqDyGn--uO4VUL67UoVxyzB1CjoWVmgeQufyA"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "68692dcc-aefb-4b8d-a1a5-26f419859f23",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "084d840d-c2c3-4ba7-8e44-b169bb232b62",
+            "name": "register",
+            "url": "http://localhost:8000/pilots/pilots/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-10T17:37:55.844Z",
+            "modified": "2024-01-12T06:21:27.294Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\n    \"username\": \"pilot3\",\n    \"email\": \"pilot1@example.com\",\n    \"password\": \"pilot1password\",\n    \"phone_number\": \"1287566589\",\n    \"profession\": \"Drone Mechanic\",\n    \"created_at\": \"2024-01-10T15:30:00Z\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6f0c89a4-3b48-4cf0-9e09-da5a3852b26d",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "084d840d-c2c3-4ba7-8e44-b169bb232b62",
+            "name": "login",
+            "url": "http://localhost:8000/pilots/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-01-10T17:38:16.273Z",
+            "modified": "2024-01-11T12:57:49.582Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone_number\": \"1234567889\",\n    \"Password\": \"pilot1password\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3bd93ede-2ea4-4fdc-a82f-147f0889ab0e",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "f58c22d6-25ef-4223-bc65-77beb6fb1f6a",
+            "name": "register",
+            "url": "http://localhost:8000/admin/admins",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-01-12T07:56:59.582Z",
+            "modified": "2024-01-12T09:46:41.303Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"password\" : \"passwordtest123\",\r\n    \"phone_number\": \"123-456-7890\"\r\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "978f0ed9-f7e7-4aff-a99a-32fe51cc60ce",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "f58c22d6-25ef-4223-bc65-77beb6fb1f6a",
+            "name": "login",
+            "url": "http://localhost:8000/admin/register",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-01-12T07:57:27.972Z",
+            "modified": "2024-01-12T10:19:52.852Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"Jane Smith\",\r\n    \"email\": \"jane.smith@example.com\",\r\n    \"password\": \"passwordTest123\",\r\n    \"phone_number\": \"987-654-3210\"\r\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "768432c1-66ef-4f20-b0f8-fb328f199458",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "fec6211f-82c9-44d2-9b9e-878f9d086bec",
+            "name": "search",
+            "url": "http://localhost:8000/search/?term=Drone",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-01-12T12:52:17.771Z",
+            "modified": "2024-01-17T13:30:11.120Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "term",
+                    "value": "Drone",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": " {\r\n    \"drone_name\": \"Drone A\"\r\n }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "77f5ad6d-ce8d-4696-807a-7f41bffc416d",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "9b41c0ab-114c-4793-b5ab-88d97cb45ebb",
+            "name": "insert",
+            "url": "http://localhost:8000/repair_form",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-01-13T09:50:39.434Z",
+            "modified": "2024-01-13T10:24:39.001Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "\r\n  {\r\n    \"pilot_id\": 3,\r\n    \"drone_id\": 103,\r\n    \"issue_description\": \"GPS malfunction\",\r\n    \"repair_date\": \"2022-03-25\",\r\n    \"repair_status\": \"Completed\"\r\n  }\r\n \r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "17d6e55d-08c5-4032-a025-106e8d1c39b1",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "9b41c0ab-114c-4793-b5ab-88d97cb45ebb",
+            "name": "update",
+            "url": "http://localhost:8000/repair_form//updated_forms/1",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-01-13T10:53:40.100Z",
+            "modified": "2024-01-13T11:09:33.180Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"pilot_id\": 1,\r\n    \"drone_id\": 101,\r\n    \"issue_description\": \"Broken propeller\",\r\n    \"repair_date\": \"2022-01-15\",\r\n    \"repair_status\": \"In Progress\"\r\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aeb17aaf-8f89-4104-9d47-5a1df32cc0b0",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "9b41c0ab-114c-4793-b5ab-88d97cb45ebb",
+            "name": "delete",
+            "url": "http://localhost:8000/repair_form/delete_forms/1",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-01-13T10:53:59.633Z",
+            "modified": "2024-01-13T10:59:58.496Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c2135b59-bd7b-4584-9820-2b5e8f7d8ded",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "9b41c0ab-114c-4793-b5ab-88d97cb45ebb",
+            "name": "getforms",
+            "url": "",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-01-13T10:54:56.094Z",
+            "modified": "2024-01-13T10:54:56.094Z",
+            "headers": []
+        },
+        {
+            "_id": "0ceb07ac-f064-4c5f-afb2-d12fd8ff9597",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "9b41c0ab-114c-4793-b5ab-88d97cb45ebb",
+            "name": "getallforms",
+            "url": "",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-01-13T10:55:13.973Z",
+            "modified": "2024-01-13T10:55:13.973Z",
+            "headers": []
+        },
+        {
+            "_id": "b8b407b3-89b4-454f-9b3e-ba274c26563c",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "10c7edcc-d1b1-4cb4-8fe4-1c33cfe71ac7",
+            "name": "insert",
+            "url": "http://localhost:8000/spraying_form",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2024-01-14T07:38:21.122Z",
+            "modified": "2024-01-14T07:55:42.586Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\r\n    \"pilot_id\": 2,\r\n    \"drone_id\": 101,\r\n    \"acers_to_spray\": 5.25,\r\n    \"chemical_used\": \"Pesticide A\",\r\n    \"address\": \"123 Orchard St, Farmlandville, Country\"\r\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e1d9127c-3f15-419c-a973-bd63fbf262c4",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "10c7edcc-d1b1-4cb4-8fe4-1c33cfe71ac7",
+            "name": "update",
+            "url": "",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-01-14T07:38:33.852Z",
+            "modified": "2024-01-14T07:38:33.852Z",
+            "headers": []
+        },
+        {
+            "_id": "0cc2bd2d-532c-46c3-be0a-fcb1b7805385",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "10c7edcc-d1b1-4cb4-8fe4-1c33cfe71ac7",
+            "name": "getallforms",
+            "url": "",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-01-14T07:39:03.846Z",
+            "modified": "2024-01-14T07:39:03.846Z",
+            "headers": []
+        },
+        {
+            "_id": "faa6fb22-6392-4f78-92ae-19f2dd5d950e",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "10c7edcc-d1b1-4cb4-8fe4-1c33cfe71ac7",
+            "name": "getform",
+            "url": "",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2024-01-14T07:39:25.129Z",
+            "modified": "2024-01-14T07:39:25.129Z",
+            "headers": []
+        },
+        {
+            "_id": "5951e989-b035-4e29-a890-19e428219d6d",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "10c7edcc-d1b1-4cb4-8fe4-1c33cfe71ac7",
+            "name": "delete",
+            "url": "",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2024-01-14T07:39:50.931Z",
+            "modified": "2024-01-14T07:39:50.931Z",
+            "headers": []
+        },
+        {
+            "_id": "37040399-45fe-4672-a1ff-ca68a7bdc7fa",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "1f11684b-c282-4407-a03c-81a8b58a6784",
+            "name": "insert",
+            "url": "http://localhost:8000/cart",
+            "method": "POST",
+            "sortNum": 210000,
+            "created": "2024-01-14T14:12:28.793Z",
+            "modified": "2024-01-15T12:30:09.423Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"OrderID\": 2,\n    \"drone_id\": 102,\n    \"QuantityInCart\": 1,\n    \"TotalCost\": 75.50\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ad7a96e8-8015-4a9c-baa6-51d85782a7ac",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "0e9c9fdc-058f-4f9d-8da0-864ead2b8592",
+            "name": "insert",
+            "url": "http://localhost:8000/order",
+            "method": "POST",
+            "sortNum": 230000,
+            "created": "2024-01-14T14:14:43.754Z",
+            "modified": "2024-01-14T14:17:17.261Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\r\n    \"UserID\": 5,\r\n    \"ProductID\": 105,\r\n    \"OrderQuantity\": 2,\r\n    \"TotalAmount\": 120.50,\r\n    \"Address\": \"654 Cedar Rd\"\r\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "27046a2d-0ba0-48f1-b2f9-65a1aede499c",
+            "colId": "eba562b1-be2c-4c07-b951-c4f7e28b3e7b",
+            "containerId": "d648855e-f79a-4efc-bcca-794864cb3e1c",
+            "name": "insert",
+            "url": "",
+            "method": "GET",
+            "sortNum": 240000,
+            "created": "2024-01-15T12:45:46.559Z",
+            "modified": "2024-01-15T12:45:46.559Z",
+            "headers": []
+        }
+    ]
+}

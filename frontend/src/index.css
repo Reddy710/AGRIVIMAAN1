@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+.bg-custom {
+    background-color: #e48c08; /* replace with your custom color */
+  }
+  
+  .hover\:bg-custom:hover {
+    background-color: #cc6600; /* replace with your custom hover color */
+  }
+  
